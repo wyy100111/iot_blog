@@ -1,3 +1,4 @@
 tmp/
 blog.db
 *.exe
+pkg/
