@@ -27,5 +27,8 @@ func main() {
 		})
 	})
 
+	//增
+	r.POST("/article,controllers.Create_article(yc)")
+
 	r.Run(":8080")
 }
