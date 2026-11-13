@@ -30,6 +30,8 @@ func main() {
 
 	//增
 	r.POST("/articles", controllers.Create_article(yc))
+	//删
+	r.DELETE("/articles/:id", controllers.Delete_article(yc))
 
 	r.Run(":8080")
 }

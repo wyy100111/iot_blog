@@ -2,3 +2,4 @@ tmp/
 blog.db
 *.exe
 pkg/
+test_test.go
