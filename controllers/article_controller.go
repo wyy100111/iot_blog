@@ -49,7 +49,7 @@ func Create_article(yc *gorm.DB) gin.HandlerFunc {
 		}
 
 		//存成功了！
-		a.JSON(0, gin.H{
+		a.JSON(200, gin.H{
 			"code":    0,
 			"message": "发布成功！",
 			"data":    article,

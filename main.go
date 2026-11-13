@@ -1,7 +1,8 @@
 package main
 
 import (
-	"IOT_myblog/models" // 引入article_model
+	"IOT_myblog/controllers" //引入controllers
+	"IOT_myblog/models"      // 引入article_model
 
 	"github.com/gin-gonic/gin"
 	"gorm.io/driver/sqlite" // 引入sqlite
@@ -28,7 +29,7 @@ func main() {
 	})
 
 	//增
-	r.POST("/article,controllers.Create_article(yc)")
+	r.POST("/articles", controllers.Create_article(yc))
 
 	r.Run(":8080")
 }
